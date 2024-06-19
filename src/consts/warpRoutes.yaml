@@ -2,5 +2,36 @@
 # These configs will be merged with the warp routes in the configured registry
 # The input here is typically the output of the Hyperlane CLI warp deploy command
 ---
-tokens: []
-options: {}
+# tokens: []
+# options: {}
+tokens:
+  - chainName: bsctestnet
+    standard: EvmHypCollateral
+    name: TRUMP
+    symbol: TRP
+    totalSupply: "1000000000000000000000000"
+    decimals: 18
+    isNft: false
+    type: collateral
+    token: "0x5452134b14c5133a1c8678d4dea128de5e2af2fe"
+    owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+    mailbox: "0xF9F6F5646F478d5ab4e20B0F910C92F1CCC9Cc6D"
+    addressOrDenom: "0x21A7C1B13B52c44F377Ba8dAdfCaF13Aec4c85B3"
+    collateralAddressOrDenom: "0x5452134b14c5133a1c8678d4dea128de5e2af2fe"
+    connections:
+      - token: ethereum|sepolia|0x21A7C1B13B52c44F377Ba8dAdfCaF13Aec4c85B3
+  - chainName: sepolia
+    standard: EvmHypCollateral
+    name: TRUMP
+    symbol: TRP
+    totalSupply: "1000000000000000000000000"
+    decimals: 18
+    isNft: false
+    type: collateral
+    token: "0x5452134B14c5133a1C8678d4DEa128de5e2AF2fE"
+    owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+    mailbox: "0xfFAEF09B3cd11D9b20d1a19bECca54EEC2884766"
+    addressOrDenom: "0x21A7C1B13B52c44F377Ba8dAdfCaF13Aec4c85B3"
+    collateralAddressOrDenom: "0x5452134B14c5133a1C8678d4DEa128de5e2AF2fE"
+    connections:
+      - token: ethereum|bsctestnet|0x21A7C1B13B52c44F377Ba8dAdfCaF13Aec4c85B3
