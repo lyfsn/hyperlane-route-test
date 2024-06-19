@@ -2,36 +2,32 @@
 # These configs will be merged with the warp routes in the configured registry
 # The input here is typically the output of the Hyperlane CLI warp deploy command
 ---
-# tokens: []
-# options: {}
 tokens:
   - chainName: bsctestnet
     standard: EvmHypCollateral
-    name: TRUMP
-    symbol: TRP
+    name: Biden
+    symbol: BDN
     totalSupply: "1000000000000000000000000"
     decimals: 18
     isNft: false
     type: collateral
-    token: "0x5452134b14c5133a1c8678d4dea128de5e2af2fe"
+    token: "0x7ada6d7c622c88322543849ce1396e94e009790f"
     owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
     mailbox: "0xF9F6F5646F478d5ab4e20B0F910C92F1CCC9Cc6D"
-    addressOrDenom: "0x21A7C1B13B52c44F377Ba8dAdfCaF13Aec4c85B3"
-    collateralAddressOrDenom: "0x5452134b14c5133a1c8678d4dea128de5e2af2fe"
+    addressOrDenom: "0xCa71761adA2Ae356b79b5b003cc6c8Ec4C658b19"
+    collateralAddressOrDenom: "0x7ada6d7c622c88322543849ce1396e94e009790f"
     connections:
-      - token: ethereum|sepolia|0x21A7C1B13B52c44F377Ba8dAdfCaF13Aec4c85B3
+      - token: ethereum|sepolia|0x06C4Cad9030fA336f676e0f1f8a50744655E6CC4
   - chainName: sepolia
-    standard: EvmHypCollateral
-    name: TRUMP
-    symbol: TRP
+    standard: EvmHypSynthetic
+    name: Biden
+    symbol: BDN
     totalSupply: "1000000000000000000000000"
     decimals: 18
     isNft: false
-    type: collateral
-    token: "0x5452134B14c5133a1C8678d4DEa128de5e2AF2fE"
+    type: synthetic
     owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
     mailbox: "0xfFAEF09B3cd11D9b20d1a19bECca54EEC2884766"
-    addressOrDenom: "0x21A7C1B13B52c44F377Ba8dAdfCaF13Aec4c85B3"
-    collateralAddressOrDenom: "0x5452134B14c5133a1C8678d4DEa128de5e2AF2fE"
+    addressOrDenom: "0x06C4Cad9030fA336f676e0f1f8a50744655E6CC4"
     connections:
-      - token: ethereum|bsctestnet|0x21A7C1B13B52c44F377Ba8dAdfCaF13Aec4c85B3
+      - token: ethereum|bsctestnet|0xCa71761adA2Ae356b79b5b003cc6c8Ec4C658b19
