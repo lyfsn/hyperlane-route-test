@@ -29,7 +29,7 @@ export const chains: ChainMap<ChainMetadata & { mailbox?: Address }> = {
   //   },
   //   logoURI: '/logo.svg',
   // },
-  devnetb: {
+  devneta: {
     protocol: ProtocolType.Ethereum,
     chainId: 64646464,
     domainId: 64646464,
