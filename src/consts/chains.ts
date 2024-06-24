@@ -37,14 +37,14 @@ export const chains: ChainMap<ChainMetadata & { mailbox?: Address }> = {
     displayName: 'devneta',
     nativeToken: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     rpcUrls: [{ http: 'https://rpc-devnet-a.archivenode.club' }],
-    blockExplorers: [
-      {
-        name: 'MyCustomScan',
-        url: 'https://mycustomchain-scan.com',
-        apiUrl: 'https://api.mycustomchain-scan.com/api',
-        family: ExplorerFamily.Etherscan,
-      },
-    ],
+    // blockExplorers: [
+    //   {
+    //     name: 'MyCustomScan',
+    //     url: 'https://mycustomchain-scan.com',
+    //     apiUrl: 'https://api.mycustomchain-scan.com/api',
+    //     family: ExplorerFamily.Etherscan,
+    //   },
+    // ],
     blocks: {
       confirmations: 1,
       reorgPeriod: 1,
@@ -60,14 +60,14 @@ export const chains: ChainMap<ChainMetadata & { mailbox?: Address }> = {
     displayName: 'devnetb',
     nativeToken: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     rpcUrls: [{ http: 'https://rpc-devnet-b.archivenode.club' }],
-    blockExplorers: [
-      {
-        name: 'MyCustomScan',
-        url: 'https://mycustomchain-scan.com',
-        apiUrl: 'https://api.mycustomchain-scan.com/api',
-        family: ExplorerFamily.Etherscan,
-      },
-    ],
+    // blockExplorers: [
+    //   {
+    //     name: 'MyCustomScan',
+    //     url: 'https://mycustomchain-scan.com',
+    //     apiUrl: 'https://api.mycustomchain-scan.com/api',
+    //     family: ExplorerFamily.Etherscan,
+    //   },
+    // ],
     blocks: {
       confirmations: 1,
       reorgPeriod: 1,
