@@ -38,19 +38,19 @@ export const chains: ChainMap<ChainMetadata & { mailbox?: Address }> = {
     nativeToken: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     rpcUrls: [{ http: 'https://rpc-devnet-a.archivenode.club' }],
     blockExplorers: [
-      {
-        name: 'MyCustomScan',
-        url: 'https://mycustomchain-scan.com',
-        apiUrl: 'https://api.mycustomchain-scan.com/api',
-        family: "etherscan",
-      },
+      // {
+      //   name: 'MyCustomScan',
+      //   url: 'https://mycustomchain-scan.com',
+      //   apiUrl: 'https://api.mycustomchain-scan.com/api',
+      //   family: "etherscan",
+      // },
     ],
     blocks: {
       confirmations: 1,
       reorgPeriod: 1,
       estimateBlockTime: 10,
     },
-    logoURI: '/logo.svg',
+    // logoURI: '/logo.svg',
   },
   devnetb: {
     protocol: ProtocolType.Ethereum,
@@ -61,18 +61,18 @@ export const chains: ChainMap<ChainMetadata & { mailbox?: Address }> = {
     nativeToken: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     rpcUrls: [{ http: 'https://rpc-devnet-b.archivenode.club' }],
     blockExplorers: [
-      {
-        name: 'MyCustomScan',
-        url: 'https://mycustomchain-scan.com',
-        apiUrl: 'https://api.mycustomchain-scan.com/api',
-        family: "etherscan",
-      },
+      // {
+      //   name: 'MyCustomScan',
+      //   url: 'https://mycustomchain-scan.com',
+      //   apiUrl: 'https://api.mycustomchain-scan.com/api',
+      //   family: "etherscan",
+      // },
     ],
     blocks: {
       confirmations: 1,
       reorgPeriod: 1,
       estimateBlockTime: 10,
     },
-    logoURI: '/logo.svg',
+    // logoURI: '/logo.svg',
   },
 };
