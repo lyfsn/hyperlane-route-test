@@ -37,6 +37,7 @@ export function tryGetChainMetadata(chain: ChainNameOrId) {
 }
 
 export function getChainMetadata(chain: ChainNameOrId) {
+  console.log("---debug---", chain)
   return getMultiProvider().getChainMetadata(chain);
 }
 
