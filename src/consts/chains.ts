@@ -1,4 +1,5 @@
 import { ChainMap, ChainMetadata } from '@hyperlane-xyz/sdk';
+import { ProtocolType } from '@hyperlane-xyz/utils';
 
 // A map of chain names to ChainMetadata
 // Chains can be defined here, in chains.json, or in chains.yaml
@@ -28,4 +29,50 @@ export const chains: ChainMap<ChainMetadata & { mailbox?: Address }> = {
   //   },
   //   logoURI: '/logo.svg',
   // },
+  devnetb: {
+    protocol: ProtocolType.Ethereum,
+    chainId: 64646464,
+    domainId: 64646464,
+    name: 'devneta',
+    displayName: 'devneta',
+    nativeToken: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    rpcUrls: [{ http: 'https://rpc-devnet-a.archivenode.club' }],
+    blockExplorers: [
+      {
+        name: 'MyCustomScan',
+        url: 'https://mycustomchain-scan.com',
+        apiUrl: 'https://api.mycustomchain-scan.com/api',
+        family: ExplorerFamily.Etherscan,
+      },
+    ],
+    blocks: {
+      confirmations: 1,
+      reorgPeriod: 1,
+      estimateBlockTime: 10,
+    },
+    logoURI: '/logo.svg',
+  },
+  devnetb: {
+    protocol: ProtocolType.Ethereum,
+    chainId: 74747474,
+    domainId: 74747474,
+    name: 'devnetb',
+    displayName: 'devnetb',
+    nativeToken: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    rpcUrls: [{ http: 'https://rpc-devnet-b.archivenode.club' }],
+    blockExplorers: [
+      {
+        name: 'MyCustomScan',
+        url: 'https://mycustomchain-scan.com',
+        apiUrl: 'https://api.mycustomchain-scan.com/api',
+        family: ExplorerFamily.Etherscan,
+      },
+    ],
+    blocks: {
+      confirmations: 1,
+      reorgPeriod: 1,
+      estimateBlockTime: 10,
+    },
+    logoURI: '/logo.svg',
+  },
 };
