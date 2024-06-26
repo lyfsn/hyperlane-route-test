@@ -2,61 +2,33 @@
 # These configs will be merged with the warp routes in the configured registry
 # The input here is typically the output of the Hyperlane CLI warp deploy command
 ---
-tokens:  
+tokens:
   - chainName: devneta
     standard: EvmHypCollateral
-    name: WIF
-    symbol: WIF
+    name: ABBB
+    symbol: ABBB
     decimals: 18
     totalSupply: 0
     isNft: false
     type: collateral
-    token: "0x1788a5d023bac58baf55a92153192a6568e42bad"
+    token: "0x947da62ca05a1073a8dc19628ea8c304b968416d"
     owner: "0x8943545177806ED17B9F23F0a21ee5948eCaa776"
-    mailbox: "0xD9BFe39BA99503baA8cBA3DF08e3C9421889Fd44"
-    addressOrDenom: "0xe21c9cfea094aAbE99C96D56281a00876F97258a"
-    collateralAddressOrDenom: "0x1788a5d023bac58baf55a92153192a6568e42bad"
+    mailbox: "0x93b2B592F2e6c16255A4877fAc046b5421915387"
+    addressOrDenom: "0x31Cc3402c7D9573c507208D826679F9b4E1ebE86"
+    collateralAddressOrDenom: "0x947da62ca05a1073a8dc19628ea8c304b968416d"
     connections:
-      - token: ethereum|devnetb|0x554c1f3D1E02F8c7203077021F626e6a0Af6B53C
+      - token: ethereum|devnetb|0xf2bD68421A73821368eEefaCB420FFdFa0237c86
   - chainName: devnetb
     standard: EvmHypSynthetic
-    name: WIF
-    symbol: WIF
+    name: ABBB
+    symbol: ABBB
     decimals: 18
     totalSupply: 0
     isNft: false
     type: synthetic
     owner: "0x8943545177806ED17B9F23F0a21ee5948eCaa776"
-    mailbox: "0x3901C4670aA92a626636f7Ea1e3F029A0ECd6b68"
-    addressOrDenom: "0x554c1f3D1E02F8c7203077021F626e6a0Af6B53C"
+    mailbox: "0x700420690932eeB22bCd01fBf537d37BeCa5577C"
+    addressOrDenom: "0xf2bD68421A73821368eEefaCB420FFdFa0237c86"
     connections:
-      - token: ethereum|devneta|0xe21c9cfea094aAbE99C96D56281a00876F97258a
+      - token: ethereum|devneta|0x31Cc3402c7D9573c507208D826679F9b4E1ebE86
 
-  # - chainName: bsctestnet
-  #   standard: EvmHypCollateral
-  #   name: Biden
-  #   symbol: BDN
-  #   totalSupply: "1000000000000000000000000"
-  #   decimals: 18
-  #   isNft: false
-  #   type: collateral
-  #   token: "0x7ada6d7c622c88322543849ce1396e94e009790f"
-  #   owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
-  #   mailbox: "0xF9F6F5646F478d5ab4e20B0F910C92F1CCC9Cc6D"
-  #   addressOrDenom: "0xCa71761adA2Ae356b79b5b003cc6c8Ec4C658b19"
-  #   collateralAddressOrDenom: "0x7ada6d7c622c88322543849ce1396e94e009790f"
-  #   connections:
-  #     - token: ethereum|sepolia|0x06C4Cad9030fA336f676e0f1f8a50744655E6CC4
-  # - chainName: sepolia
-  #   standard: EvmHypSynthetic
-  #   name: Biden
-  #   symbol: BDN
-  #   totalSupply: "1000000000000000000000000"
-  #   decimals: 18
-  #   isNft: false
-  #   type: synthetic
-  #   owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
-  #   mailbox: "0xfFAEF09B3cd11D9b20d1a19bECca54EEC2884766"
-  #   addressOrDenom: "0x06C4Cad9030fA336f676e0f1f8a50744655E6CC4"
-  #   connections:
-  #     - token: ethereum|bsctestnet|0xCa71761adA2Ae356b79b5b003cc6c8Ec4C658b19
