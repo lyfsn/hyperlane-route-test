@@ -32,7 +32,6 @@ tokens:
     addressOrDenom: "0xf2bD68421A73821368eEefaCB420FFdFa0237c86"
     connections:
       - token: ethereum|devneta|0x31Cc3402c7D9573c507208D826679F9b4E1ebE86
-      - token: ethereum|devneta|0x9946d0b44e71A4A6339770510579c6C40d3A29eD
   - chainName: devneta
     standard: EvmHypCollateral
     name: ABBC
@@ -48,6 +47,21 @@ tokens:
     collateralAddressOrDenom: "0xe0cd9c162cc4f1f1e180aa1c1514b46d72b3ae8d"
     connections:
       - token: ethereum|devnetb|0xf2bD68421A73821368eEefaCB420FFdFa0237c86
+  - chainName: devnetb
+    standard: EvmHypSynthetic
+    name: ABBD
+    symbol: ABBD
+    decimals: 18
+    totalSupply: 0
+    isNft: false
+    type: synthetic
+    owner: "0x8943545177806ED17B9F23F0a21ee5948eCaa776"
+    mailbox: "0x700420690932eeB22bCd01fBf537d37BeCa5577C"
+    addressOrDenom: "0xf2bD68421A73821368eEefaCB420FFdFa0237c86"
+    connections:
+      - token: ethereum|devneta|0x9946d0b44e71A4A6339770510579c6C40d3A29eD
+
+    
   # - chainName: devnetb
   #   standard: EvmHypCollateral
   #   name: ABBC
