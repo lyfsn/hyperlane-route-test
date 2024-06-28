@@ -18,6 +18,7 @@ tokens:
     collateralAddressOrDenom: "0x947da62ca05a1073a8dc19628ea8c304b968416d"
     connections:
       - token: ethereum|devnetb|0xf2bD68421A73821368eEefaCB420FFdFa0237c86
+    igpTokenAddressOrDenom: "0x93e30847DCa02A179F11B1c5347CCc3ffb1B17cB"
   - chainName: devnetb
     standard: EvmHypSynthetic
     name: ABBB
@@ -31,4 +32,34 @@ tokens:
     addressOrDenom: "0xf2bD68421A73821368eEefaCB420FFdFa0237c86"
     connections:
       - token: ethereum|devneta|0x31Cc3402c7D9573c507208D826679F9b4E1ebE86
-
+      
+  - chainName: devneta
+    standard: EvmHypCollateral
+    name: ABBC
+    symbol: ABBC
+    decimals: 18
+    totalSupply: 0
+    isNft: false
+    type: collateral
+    token: "0xe0cd9c162cc4f1f1e180aa1c1514b46d72b3ae8d"
+    owner: "0x8943545177806ED17B9F23F0a21ee5948eCaa776"
+    mailbox: "0x93b2B592F2e6c16255A4877fAc046b5421915387"
+    addressOrDenom: "0xe412448e5012CD1b7767B19B250D91fAde9A3e34"
+    collateralAddressOrDenom: "0xe0cd9c162cc4f1f1e180aa1c1514b46d72b3ae8d"
+    connections:
+      - token: ethereum|devnetb|0x6313e8B68C7C3617255C60C28F5384A43a6b1d07
+  - chainName: devnetb
+    standard: EvmHypCollateral
+    name: ABBC
+    symbol: ABBC
+    decimals: 18
+    totalSupply: 0
+    isNft: false
+    type: collateral
+    token: "0x31Cc3402c7D9573c507208D826679F9b4E1ebE86"
+    owner: "0x8943545177806ED17B9F23F0a21ee5948eCaa776"
+    mailbox: "0x700420690932eeB22bCd01fBf537d37BeCa5577C"
+    addressOrDenom: "0x6313e8B68C7C3617255C60C28F5384A43a6b1d07"
+    collateralAddressOrDenom: "0x31Cc3402c7D9573c507208D826679F9b4E1ebE86"
+    connections:
+      - token: ethereum|devneta|0xe412448e5012CD1b7767B19B250D91fAde9A3e34
