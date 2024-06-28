@@ -34,8 +34,8 @@ tokens:
       - token: ethereum|devneta|0x31Cc3402c7D9573c507208D826679F9b4E1ebE86
   - chainName: devnetb
     standard: EvmHypSynthetic
-    name: ABBB
-    symbol: ABBB
+    name: ABBC
+    symbol: ABBC
     decimals: 18
     totalSupply: 0
     isNft: false
