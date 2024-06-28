@@ -32,7 +32,7 @@ tokens:
     addressOrDenom: "0xf2bD68421A73821368eEefaCB420FFdFa0237c86"
     connections:
       - token: ethereum|devneta|0x31Cc3402c7D9573c507208D826679F9b4E1ebE86
-
+      - token: ethereum|devneta|0x9946d0b44e71A4A6339770510579c6C40d3A29eD
   - chainName: devneta
     standard: EvmHypCollateral
     name: ABBC
