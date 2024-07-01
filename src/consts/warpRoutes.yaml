@@ -3,49 +3,31 @@
 # The input here is typically the output of the Hyperlane CLI warp deploy command
 ---
 tokens:
-  - chainName: devneta
+  - chainName: arbitrum
     standard: EvmHypCollateral
-    name: ABBB
-    symbol: ABBB
-    decimals: 18
+    name: USD Coin
+    symbol: USDC
+    decimals: 6
     totalSupply: 0
     isNft: false
     type: collateral
-    token: "0x947da62ca05a1073a8dc19628ea8c304b968416d"
-    owner: "0x8943545177806ED17B9F23F0a21ee5948eCaa776"
-    mailbox: "0x93b2B592F2e6c16255A4877fAc046b5421915387"
-    addressOrDenom: "0x31Cc3402c7D9573c507208D826679F9b4E1ebE86"
-    collateralAddressOrDenom: "0x947da62ca05a1073a8dc19628ea8c304b968416d"
+    token: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+    owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+    mailbox: "0x979Ca5202784112f4738403dBec5D0F3B9daabB9"
+    addressOrDenom: "0xF2c327afe50295363C2F42dc3bB79403a55FD9Dd"
+    collateralAddressOrDenom: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
     connections:
-      - token: ethereum|devnetb|0xf2bD68421A73821368eEefaCB420FFdFa0237c86
-    igpTokenAddressOrDenom: "0x93e30847DCa02A179F11B1c5347CCc3ffb1B17cB"
-  - chainName: devnetb
+      - token: ethereum|endurance|0xa2E3662c912B2319257D9d52e4988dEb88010866
+  - chainName: endurance
     standard: EvmHypSynthetic
-    name: ABBB
-    symbol: ABBB
+    name: USDC
+    symbol: USDC
     decimals: 18
     totalSupply: 0
     isNft: false
     type: synthetic
-    owner: "0x8943545177806ED17B9F23F0a21ee5948eCaa776"
-    mailbox: "0x700420690932eeB22bCd01fBf537d37BeCa5577C"
-    addressOrDenom: "0xf2bD68421A73821368eEefaCB420FFdFa0237c86"
+    owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
+    mailbox: "0xBEF497cd38A86D2Ec90e57695c3F62E16E3bC5bf"
+    addressOrDenom: "0xa2E3662c912B2319257D9d52e4988dEb88010866"
     connections:
-      - token: ethereum|devneta|0x31Cc3402c7D9573c507208D826679F9b4E1ebE86
-      - token: ethereum|devneta|0x13b52132CD870494030b57671Dc18b8F930AF4F0
-  
-  - chainName: devneta
-    standard: EvmHypCollateral
-    name: ABBC
-    symbol: ABBC
-    decimals: 18
-    totalSupply: 0
-    isNft: false
-    type: collateral
-    token: "0xa3b3aa47df3fa402ab5a27b01e5e0d6baaac3b0f"
-    owner: "0x8943545177806ED17B9F23F0a21ee5948eCaa776"
-    mailbox: "0x93b2B592F2e6c16255A4877fAc046b5421915387"
-    addressOrDenom: "0x13b52132CD870494030b57671Dc18b8F930AF4F0"
-    collateralAddressOrDenom: "0xa3b3aa47df3fa402ab5a27b01e5e0d6baaac3b0f"
-    connections:
-      - token: ethereum|devnetb|0xf2bD68421A73821368eEefaCB420FFdFa0237c86
+      - token: ethereum|arbitrum|0xF2c327afe50295363C2F42dc3bB79403a55FD9Dd
