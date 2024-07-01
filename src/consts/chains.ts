@@ -50,6 +50,6 @@ export const chains: ChainMap<ChainMetadata & { mailbox?: Address }> = {
       reorgPeriod: 1,
       estimateBlockTime: 12,
     },
-    // logoURI: '/logo.svg',
+    logoURI: '/Endurance_svg.svg',
   },
 };
