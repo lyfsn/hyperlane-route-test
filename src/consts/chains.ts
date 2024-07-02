@@ -1,4 +1,7 @@
 import { ChainMap, ChainMetadata } from '@hyperlane-xyz/sdk';
+import {
+  ExplorerFamily
+} from '@hyperlane-xyz/sdk/metadata/chainMetadataTypes';
 import { ProtocolType } from '@hyperlane-xyz/utils';
 
 // A map of chain names to ChainMetadata
@@ -42,7 +45,7 @@ export const chains: ChainMap<ChainMetadata & { mailbox?: Address }> = {
         name: 'Endurance Explorer',
         url: 'https://explorer-endurance.fusionist.io/',
         apiUrl: 'https://explorer-endurance.fusionist.io/api',
-        family: "blockscout",
+        family: ExplorerFamily.Blockscout,
       },
     ],
     blocks: {
