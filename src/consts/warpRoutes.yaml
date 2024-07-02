@@ -29,7 +29,7 @@ tokens:
     type: synthetic
     owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
     mailbox: "0xBEF497cd38A86D2Ec90e57695c3F62E16E3bC5bf"
-    interchainSecurityModule: "0x60D2AB60bb261C32AD8FF1Beb586b522d9Df316b"
+    interchainSecurityModule: "0x895978c28df3413C1598d7012F918479C6cd6634"
     addressOrDenom: "0x70D04b9d98161913e8da475B7ce631b750613ee5"
     connections:
       - token: ethereum|arbitrum|0xC9c2c920A51d1a129D3f7724cb5018014E2d2128
