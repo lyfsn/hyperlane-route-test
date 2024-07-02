@@ -1,7 +1,4 @@
-import { ChainMap, ChainMetadata } from '@hyperlane-xyz/sdk';
-import {
-  ExplorerFamily
-} from '@hyperlane-xyz/sdk/metadata/chainMetadataTypes';
+import { ChainMap, ChainMetadata, ExplorerFamily } from '@hyperlane-xyz/sdk';
 import { ProtocolType } from '@hyperlane-xyz/utils';
 
 // A map of chain names to ChainMetadata
