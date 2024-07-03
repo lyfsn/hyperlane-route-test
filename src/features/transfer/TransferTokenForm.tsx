@@ -446,6 +446,7 @@ async function validateForm(
     logger.error('Error validating form', error);
     let errorMsg = errorToString(error, 40);
     if (insufficientFundsErrMsg.test(errorMsg)) {
+      console.log(errorMsg)
       errorMsg = 'Insufficient funds for gas fees';
     }
     return { form: errorMsg };
