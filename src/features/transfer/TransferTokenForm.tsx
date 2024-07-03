@@ -429,6 +429,7 @@ async function validateForm(
   accounts: Record<ProtocolType, AccountInfo>,
 ) {
   try {
+    console.log("------debug----validateForm")
     const { origin, destination, tokenIndex, amount, recipient } = values;
     const token = getTokenByIndex(tokenIndex);
     if (!token) return { token: 'Token is required' };
@@ -446,7 +447,7 @@ async function validateForm(
     logger.error('Error validating form', error);
     let errorMsg = errorToString(error, 40);
     if (insufficientFundsErrMsg.test(errorMsg)) {
-      console.log(errorMsg)
+      console.log("------debug----errorMsg")
       errorMsg = 'Insufficient funds for gas fees';
     }
     return { form: errorMsg };
