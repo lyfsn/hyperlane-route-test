@@ -29,6 +29,7 @@ tokens:
           type: messageIdMultisigIsm
       threshold: 2
     addressOrDenom: "0xC6e7949A25cd82e6723C2a37B09F172BB7fb6E1E"
+    interchainGasPaymaster: "0x3b6044acd6767f017e99318AA6Ef93b7B06A5a22"
     connections:
       - token: ethereum|endurance|0xb6Fe8C506Fdd2F81561F3be205cC0EE7745e209e
   - chainName: endurance
