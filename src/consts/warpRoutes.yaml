@@ -10,26 +10,51 @@ tokens:
     decimals: 6
     totalSupply: 0
     isNft: false
-    type: collateral
+    type: collateralFiat
     token: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
     owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
-    mailbox: "0x979Ca5202784112f4738403dBec5D0F3B9daabB9"
-    interchainSecurityModule: "0xf1A65648bB0B92be9AcF6f5478036104e1b7B78d"
-    addressOrDenom: "0xDF50FCbbdaEA046C6897619B88052D0334Db42fb"
-    collateralAddressOrDenom: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+    mailbox: "0x6e783d6C0eFc01B25a4a3275E066dbd98B589572"
+    interchainSecurityModule:
+      type: staticAggregationIsm
+      modules:
+        - validators:
+            - "0x18059261d1A3741F231a19D78c40389dA9460603"
+            - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+          threshold: 1
+          type: merkleRootMultisigIsm
+        - validators:
+            - "0x18059261d1A3741F231a19D78c40389dA9460603"
+            - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+          threshold: 1
+          type: messageIdMultisigIsm
+      threshold: 2
+    addressOrDenom: "0xC6e7949A25cd82e6723C2a37B09F172BB7fb6E1E"
     connections:
-      - token: ethereum|endurance|0x0841e0B6E5450f2a5F20706982b24775Bc2A1fc8
+      - token: ethereum|endurance|0xb6Fe8C506Fdd2F81561F3be205cC0EE7745e209e
   - chainName: endurance
     standard: EvmHypSynthetic
-    name: USDC
+    name: USD Coin
     symbol: USDC
     decimals: 6
     totalSupply: 0
     isNft: false
     type: synthetic
     owner: "0x96E82161fbC0a755704d04Fd9EbF3ee9099488e4"
-    mailbox: "0xBEF497cd38A86D2Ec90e57695c3F62E16E3bC5bf"
-    interchainSecurityModule: "0x895978c28df3413C1598d7012F918479C6cd6634"
-    addressOrDenom: "0x0841e0B6E5450f2a5F20706982b24775Bc2A1fc8"
+    mailbox: "0x3e5EC2C305C9C7B98dA695E2C424a33B250A4149"
+    interchainSecurityModule:
+      type: staticAggregationIsm
+      modules:
+        - validators:
+            - "0x18059261d1A3741F231a19D78c40389dA9460603"
+            - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+          threshold: 1
+          type: merkleRootMultisigIsm
+        - validators:
+            - "0x18059261d1A3741F231a19D78c40389dA9460603"
+            - "0x9a64EcD021a75a40F7875c6D745ef312aa30FA49"
+          threshold: 1
+          type: messageIdMultisigIsm
+      threshold: 2
+    addressOrDenom: "0xb6Fe8C506Fdd2F81561F3be205cC0EE7745e209e"
     connections:
-      - token: ethereum|arbitrum|0xDF50FCbbdaEA046C6897619B88052D0334Db42fb
+      - token: ethereum|arbitrum|0xC6e7949A25cd82e6723C2a37B09F172BB7fb6E1E
