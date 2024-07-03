@@ -442,6 +442,7 @@ async function validateForm(
       sender: address || '',
       senderPubKey: await senderPubKey,
     });
+    return null;
     return result;
   } catch (error) {
     logger.error('Error validating form', error);
