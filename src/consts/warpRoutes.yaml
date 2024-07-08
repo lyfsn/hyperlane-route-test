@@ -3,52 +3,33 @@
 # The input here is typically the output of the Hyperlane CLI warp deploy command
 ---
 tokens:
-  # - chainName: arbitrum
-  #   standard: EvmHypCollateral
-  #   decimals: 6
-  #   symbol: USDC
-  #   name: USD Coin
-  #   addressOrDenom: "0x6Ff15F8dECFe909284b8313F348A211431038fCd"
-  #   collateralAddressOrDenom: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
-  #   igpTokenAddressOrDenom: "0xE2e597ef7F096A9F47138486f4e009Ebe1816663"
-  #   connections:
-  #     - token: ethereum|endurance|0xBCfB0F338f75F1048dfeAE17333DF0daDC693da2
-  # - chainName: base
-  #   standard: EvmHypCollateral
-  #   decimals: 6
-  #   symbol: USDC
-  #   name: USD Coin
-  #   addressOrDenom: "0xB2Ca7A046eaBF5AeadcB8A2cD9f19295EA2Dc5d5"
-  #   collateralAddressOrDenom: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
-  #   igpTokenAddressOrDenom: "0xE2e597ef7F096A9F47138486f4e009Ebe1816663"
-  #   connections:
-  #     - token: ethereum|endurance|0xBCfB0F338f75F1048dfeAE17333DF0daDC693da2
-  # - chainName: endurance
-  #   standard: EvmHypSynthetic
-  #   decimals: 6
-  #   symbol: USDC
-  #   name: USD Coin
-  #   addressOrDenom: "0xBCfB0F338f75F1048dfeAE17333DF0daDC693da2"
-  #   igpTokenAddressOrDenom: "0xE2e597ef7F096A9F47138486f4e009Ebe1816663"
-  #   connections:
-  #     - token: ethereum|arbitrum|0x6Ff15F8dECFe909284b8313F348A211431038fCd
-  #     - token: ethereum|base|0xB2Ca7A046eaBF5AeadcB8A2cD9f19295EA2Dc5d5
-
+  - chainName: arbitrum
+    standard: EvmHypCollateral
+    decimals: 6
+    symbol: USDC
+    name: USD Coin
+    addressOrDenom: "0x6Ff15F8dECFe909284b8313F348A211431038fCd"
+    collateralAddressOrDenom: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+    igpTokenAddressOrDenom: "0xE2e597ef7F096A9F47138486f4e009Ebe1816663"
+    connections:
+      - token: ethereum|endurance|0xBCfB0F338f75F1048dfeAE17333DF0daDC693da2
   - chainName: base
     standard: EvmHypCollateral
     decimals: 6
     symbol: USDC
     name: USD Coin
-    addressOrDenom: "0x54d8c7B1596C3E1A7d4C423d7CCB5bA419bD0a61"
+    addressOrDenom: "0xB2Ca7A046eaBF5AeadcB8A2cD9f19295EA2Dc5d5"
     collateralAddressOrDenom: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    igpTokenAddressOrDenom: "0xE2e597ef7F096A9F47138486f4e009Ebe1816663"
     connections:
-      - token: ethereum|endurance|0x97643dF776c63822086B8e4b1837475908D27eAc
+      - token: ethereum|endurance|0xBCfB0F338f75F1048dfeAE17333DF0daDC693da2
   - chainName: endurance
     standard: EvmHypSynthetic
     decimals: 6
     symbol: USDC
     name: USD Coin
-    addressOrDenom: "0x97643dF776c63822086B8e4b1837475908D27eAc"
+    addressOrDenom: "0xBCfB0F338f75F1048dfeAE17333DF0daDC693da2"
+    igpTokenAddressOrDenom: "0xE2e597ef7F096A9F47138486f4e009Ebe1816663"
     connections:
-      - token: ethereum|base|0x54d8c7B1596C3E1A7d4C423d7CCB5bA419bD0a61
-    
+      - token: ethereum|arbitrum|0x6Ff15F8dECFe909284b8313F348A211431038fCd
+      - token: ethereum|base|0xB2Ca7A046eaBF5AeadcB8A2cD9f19295EA2Dc5d5
