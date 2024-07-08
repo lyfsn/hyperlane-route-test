@@ -20,6 +20,7 @@ tokens:
     name: USD Coin
     addressOrDenom: "0xB2Ca7A046eaBF5AeadcB8A2cD9f19295EA2Dc5d5"
     collateralAddressOrDenom: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    igpTokenAddressOrDenom: "0xE2e597ef7F096A9F47138486f4e009Ebe1816663"
     connections:
       - token: ethereum|arbitrum|0x6Ff15F8dECFe909284b8313F348A211431038fCd
       - token: ethereum|endurance|0xBCfB0F338f75F1048dfeAE17333DF0daDC693da2
