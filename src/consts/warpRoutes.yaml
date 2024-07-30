@@ -8,27 +8,27 @@ tokens:
     decimals: 6
     symbol: USDC
     name: USD Coin
-    addressOrDenom: "0xeC3819D952ca7680e3eF50e8fA0ad302Fe2211CA"
+    addressOrDenom: "0x64429D4d9222fb4Aae2b96DBbCeE1428df44e068"
     collateralAddressOrDenom: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
     connections:
-      - token: ethereum|base|0xdFdCe050399CCE3E2B15deED5a842942b35af9D7
-      - token: ethereum|endurance|0x190b07Aef22BE24c9F23BA71A784eb3817A5661B
+      - token: ethereum|base|0x416eFED46a9b3FDee20dcB461DC5B60f590C4E5a
+      - token: ethereum|endurance|0xfc7682E588f5cD3cDEEfEcc92D4e8A2Bc0c867c9
   - chainName: base
     standard: EvmHypCollateral
     decimals: 6
     symbol: USDC
     name: USD Coin
-    addressOrDenom: "0xdFdCe050399CCE3E2B15deED5a842942b35af9D7"
+    addressOrDenom: "0x416eFED46a9b3FDee20dcB461DC5B60f590C4E5a"
     collateralAddressOrDenom: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
     connections:
-      - token: ethereum|arbitrum|0xeC3819D952ca7680e3eF50e8fA0ad302Fe2211CA
-      - token: ethereum|endurance|0x190b07Aef22BE24c9F23BA71A784eb3817A5661B
+      - token: ethereum|arbitrum|0x64429D4d9222fb4Aae2b96DBbCeE1428df44e068
+      - token: ethereum|endurance|0xfc7682E588f5cD3cDEEfEcc92D4e8A2Bc0c867c9
   - chainName: endurance
     standard: EvmHypCollateral
     decimals: 6
     symbol: USDC
     name: USD Coin
-    addressOrDenom: "0x190b07Aef22BE24c9F23BA71A784eb3817A5661B"
+    addressOrDenom: "0xfc7682E588f5cD3cDEEfEcc92D4e8A2Bc0c867c9"
     connections:
-      - token: ethereum|arbitrum|0xeC3819D952ca7680e3eF50e8fA0ad302Fe2211CA
-      - token: ethereum|base|0xdFdCe050399CCE3E2B15deED5a842942b35af9D7
+      - token: ethereum|arbitrum|0x64429D4d9222fb4Aae2b96DBbCeE1428df44e068
+      - token: ethereum|base|0x416eFED46a9b3FDee20dcB461DC5B60f590C4E5a
