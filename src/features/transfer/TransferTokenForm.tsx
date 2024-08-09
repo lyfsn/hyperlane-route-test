@@ -274,7 +274,7 @@ function MaxButton({ balance, disabled }: { balance?: TokenAmount; disabled?: bo
   const onClick = async () => {
     if (!balance || isNullish(tokenIndex) || disabled) return;
     const maxAmount = await fetchMaxAmount({ balance, origin, destination, accounts });
-    console.log("------debug--222--token-balance---", maxAmount, balance, origin, destination, accounts)
+    console.log("------debug--222--token-balance---", maxAmount, balance, origin, destination)
     if (isNullish(maxAmount)) return;
     const decimalsAmount = maxAmount.getDecimalFormattedAmount();
     const roundedAmount = new BigNumber(decimalsAmount).toFixed(4, BigNumber.ROUND_FLOOR);
