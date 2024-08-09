@@ -437,7 +437,7 @@ async function validateForm(
     const amountWei = toWei(amount, token.decimals);
     const { address, publicKey: senderPubKey } = getAccountAddressAndPubKey(origin, accounts);
     console.log("------debug----sendtoken-params---", token.amount(amountWei), destination, recipient, address,await senderPubKey)
-    return null
+    // return null
     const result = await getWarpCore().validateTransfer({
       originTokenAmount: token.amount(amountWei),
       destination,

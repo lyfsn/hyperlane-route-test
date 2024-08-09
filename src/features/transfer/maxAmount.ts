@@ -33,10 +33,10 @@ async function fetchMaxAmount({ accounts, balance, destination, origin }: FetchM
       destination,
       sender: address,
       senderPubKey: await publicKey,
-      feeEstimate: {
-        interchainQuote: new TokenAmount(0, balance.token),
-        localQuote: new TokenAmount(0, balance.token),
-      }
+      // feeEstimate: {
+      //   interchainQuote: new TokenAmount(0, balance.token),
+      //   localQuote: new TokenAmount(0, balance.token),
+      // }
     });
     return maxAmount;
   } catch (error) {
