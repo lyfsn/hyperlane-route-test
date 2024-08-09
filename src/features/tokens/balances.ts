@@ -20,7 +20,6 @@ export function useBalance(chain?: ChainName, token?: IToken, address?: Address)
 
   useToastError(error, 'Error fetching balance');
 
-  console.log("------debug--222--token-balance---", data, chain, address, token?.addressOrDenom)
   return {
     isLoading,
     isError,
