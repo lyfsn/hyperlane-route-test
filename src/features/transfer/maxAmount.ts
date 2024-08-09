@@ -4,7 +4,6 @@ import { toast } from 'react-toastify';
 import { TokenAmount } from '@hyperlane-xyz/sdk';
 import { ProtocolType } from '@hyperlane-xyz/utils';
 
-import { getWarpCore } from '../../context/context';
 import { logger } from '../../utils/logger';
 import { getChainMetadata } from '../chains/utils';
 import { getAccountAddressAndPubKey } from '../wallet/hooks/multiProtocol';
@@ -28,17 +27,18 @@ async function fetchMaxAmount({ accounts, balance, destination, origin }: FetchM
   try {
     const { address, publicKey } = getAccountAddressAndPubKey(origin, accounts);
     if (!address) return balance;
-    const maxAmount = await getWarpCore().getMaxTransferAmount({
-      balance,
-      destination,
-      sender: address,
-      senderPubKey: await publicKey,
-      feeEstimate: {
-        interchainQuote: TokenAmount(0, balance.token),
-        localQuote: TokenAmount(0, balance.token),
-      }
-    });
-    return maxAmount;
+    return TokenAmount(1000, balance.token);
+    // const maxAmount = await getWarpCore().getMaxTransferAmount({
+    //   balance,
+    //   destination,
+    //   sender: address,
+    //   senderPubKey: await publicKey,
+    //   feeEstimate: {
+    //     interchainQuote: TokenAmount(0, balance.token),
+    //     localQuote: TokenAmount(0, balance.token),
+    //   }
+    // });
+    // return maxAmount;
   } catch (error) {
     logger.warn('Error fetching fee quotes for max amount', error);
     const chainName = getChainMetadata(origin).displayName;
