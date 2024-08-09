@@ -27,7 +27,7 @@ async function fetchMaxAmount({ accounts, balance, destination, origin }: FetchM
   try {
     const { address, publicKey } = getAccountAddressAndPubKey(origin, accounts);
     if (!address) return balance;
-    return TokenAmount(1000, balance.token);
+    return new TokenAmount(1000, balance.token);
     // const maxAmount = await getWarpCore().getMaxTransferAmount({
     //   balance,
     //   destination,
