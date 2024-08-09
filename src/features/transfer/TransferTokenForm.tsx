@@ -434,7 +434,6 @@ async function validateForm(
     const token = getTokenByIndex(tokenIndex);
     if (!token) return { token: 'Token is required' };
     const amountWei = toWei(amount, token.decimals);
-    console.log("------debug----sendtoken-and-amount---", amountWei, token)
     const { address, publicKey: senderPubKey } = getAccountAddressAndPubKey(origin, accounts);
     console.log("------debug----sendtoken-params---", token.amount(amountWei), destination, recipient, address,await senderPubKey)
     const result = await getWarpCore().validateTransfer({
