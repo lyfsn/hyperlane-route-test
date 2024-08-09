@@ -429,7 +429,6 @@ async function validateForm(
   values: TransferFormValues,
   accounts: Record<ProtocolType, AccountInfo>,
 ) {
-  let s;
   try {
     console.log("------debug----validateForm")
     const { origin, destination, tokenIndex, amount, recipient } = values;
@@ -438,6 +437,7 @@ async function validateForm(
     const amountWei = toWei(amount, token.decimals);
     const { address, publicKey: senderPubKey } = getAccountAddressAndPubKey(origin, accounts);
     console.log("------debug----sendtoken-params---", token.amount(amountWei), destination, recipient, address,await senderPubKey)
+    return null
     const result = await getWarpCore().validateTransfer({
       originTokenAmount: token.amount(amountWei),
       destination,
@@ -446,11 +446,9 @@ async function validateForm(
       senderPubKey: await senderPubKey,
     });
     console.log("------debug----result---", result)
-    s = result
     return result;
   } catch (error) {
     logger.error('Error validating form', error);
-    return s
     let errorMsg = errorToString(error, 40);
     if (insufficientFundsErrMsg.test(errorMsg)) {
       console.log("------debug----errorMsg")
