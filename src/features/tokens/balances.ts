@@ -20,6 +20,7 @@ export function useBalance(chain?: ChainName, token?: IToken, address?: Address)
 
   useToastError(error, 'Error fetching balance');
 
+  console.log("------debug--222--token-balance---", data, chain, address, token?.addressOrDenom)
   return {
     isLoading,
     isError,
@@ -30,7 +31,6 @@ export function useBalance(chain?: ChainName, token?: IToken, address?: Address)
 export function useOriginBalance({ origin, tokenIndex }: TransferFormValues) {
   const address = useAccountAddressForChain(origin);
   const token = getTokenByIndex(tokenIndex);
-  console.log("------debug--222--token-balance---", address, token)
   return useBalance(origin, token, address);
 }
 
